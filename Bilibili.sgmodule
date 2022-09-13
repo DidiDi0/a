@@ -6,4 +6,4 @@ Bili Search = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com
 哔哩哔哩番剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
 哔哩哔哩CC字幕繁体转简体 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/imao7/a/master/bilibilicc.js,script-update-interval=0
 [MITM]
-hostname = %APPEND% ap?.bili*i.com, ap?.bili*i.net, *.hdslb.com
+hostname = %APPEND% api.bilibili.com, app.bilibilicom, *.hdslb.com
