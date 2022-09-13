@@ -2,7 +2,7 @@
 #!desc=哔哩哔哩1080+
 [Script]
 
-BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
+哔哩哔哩番剧开启1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% api.bilibili.com, app.bilibili.com
