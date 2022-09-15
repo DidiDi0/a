@@ -6,4 +6,4 @@
 欲漫社视频=type=http-request,pattern=^https?:\/\/.*\.com\/api\/app\/media,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornVideosCrack.js,script-update-interval=0
 
 [MITM]
-hostname = zjgeo.eqobc.com, xnour.xonap.com, opzzy.kefsww.com, tqrbq.mpckv.com
+hostname = %APPEND% zjgeo.eqobc.com, xnour.xonap.com, opzzy.kefsww.com, tqrbq.mpckv.com
