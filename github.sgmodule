@@ -1,0 +1,11 @@
+#!name = GitHub加速
+#!desc = 加速GitHub访问，解决GitHub访问困难的问题。
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/main/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/60px/GitHub.png
+
+[URL Rewrite]
+^https?:\/\/raw.githubusercontent.com https://raw.iqiq.io 302
+[MITM]
+hostname= %APPEND% raw.githubusercontent.com
