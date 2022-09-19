@@ -7,5 +7,6 @@
 
 [URL Rewrite]
 ^https?:\/\/raw.githubusercontent.com https://raw.iqiq.io 302
+
 [MITM]
 hostname= %APPEND% raw.githubusercontent.com
