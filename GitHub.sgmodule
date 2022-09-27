@@ -6,7 +6,7 @@
 #!icon = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Icon/60px/GitHub.png
 
 [URL Rewrite]
-^https?:\/\/raw.githubusercontent.com https://ghproxy.com 302
+^https?:\/\/raw.githubusercontent.com https://raw.iqiq.io 302
 
 [MITM]
 hostname= %APPEND% raw.githubusercontent.com
