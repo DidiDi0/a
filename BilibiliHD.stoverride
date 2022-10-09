@@ -12,5 +12,5 @@ scrip:
       timeout: 10
 script-providers:      
    BilibiliHD: 
-     url: https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js
+     url: https://raw.githubusercontent.com/imao7/a/master/bili1080%2B.js
      interval: 86400
