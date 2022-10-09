@@ -1,0 +1,16 @@
+name: BilibiliHD
+desc: 哔哩哔哩番剧开启1080P+
+http:
+  mitm:
+    - "app.bilibili.com"
+    - "api.bilibili.com"
+scrip:
+    - match: ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?))
+      name: BiliiliHDb
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:      
+   BilibiliHD: 
+     url: https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js
+     interval: 86400
