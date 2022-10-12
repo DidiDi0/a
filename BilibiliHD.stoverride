@@ -6,7 +6,7 @@ http:
     - "api.bilibili.com"
 scrip:
     - match: ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?))
-      name: BiliiliHDb
+      name: BilibiliHD
       type: response
       require-body: true
       timeout: 10
