@@ -1,6 +1,0 @@
-#!name=哔哩哔哩CC字幕
-#!desc=哔哩哔哩繁体CC字幕转中文简体
-[Script]
-哔哩哔哩CC字幕繁体转简体 = type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,max-size=0,timeout=10,script-path=https://raw.githubusercontent.com/imao7/a/master/bilibilicc.js,script-update-interval=0
-[MITM]
-hostname = *.hdslb.com
