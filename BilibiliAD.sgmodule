@@ -1,5 +1,5 @@
 #!name=哔哩哔哩去广告
-#!desc=哔哩哔哩AD
+#!desc=哔哩哔哩去广告
 [Rule]
 DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad,REJECT
