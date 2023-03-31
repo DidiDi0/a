@@ -1,11 +1,17 @@
-#!name=5.1 baliyun Fileball解锁
-#!desc=FileBall阿里云盘
-#https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js
+#!name=Fileball挂载
+#!desc=添加Synoogy协议，账号随便填，密码填cookie 获取ck的方法
+# 阿里云Token获取地址(需要用阿里云盘扫描alist的二维码获得)[ https://alist-doc.nn.ci/docs/driver/aliyundrive ]
+# 夸克登录网页版抓包，路径https://drive.quark.cn/1/clouddrive/file
+# pikpak 直接填账号密码
+
+[General]
+force-http-engine-hosts = %APPEND% aliyun.example.com:0,quark.example.com:0,pikpak.example.com:0
+//要开mpv的话必须添加
+
+
 [Script]
+阿里云挂载 = type=http-request,pattern=^http:\/\/aliyun\.example\.com,requires-body=1,script-path=阿里云挂载.js,max-size=0,debug=0
 
-Fileball = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,requires-body=1,script-path=https://raw.githubusercontent.com/imao7/Quan/master/Fileball.js,max-size=0
+夸克 = type=http-request,pattern=^http:\/\/quark\.example\.com,requires-body=1,max-size=-1,script-path=夸克.js,debug=0
 
-[MITM]
-hostname = %APPEND% api.revenuecat.com
-[Header Rewrite]
-https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
+pikpak挂载 = type=http-request,pattern=^http:\/\/pikpak\.example\.com,requires-body=1,script-path=pikpak挂载.js,max-size=0,debug=0
